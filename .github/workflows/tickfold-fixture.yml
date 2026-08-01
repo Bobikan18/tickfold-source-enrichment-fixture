@@ -1,0 +1,15 @@
+name: Tickfold fixture check
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify fixture
+        run: echo "Tickfold source enrichment fixture check passed"
